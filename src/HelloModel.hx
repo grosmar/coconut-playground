@@ -7,10 +7,11 @@ class HelloModel implements Model
 
     @:transition public function test()
     {
-        return @patch {status:"hello"};
+        //return @patch {status:"hello"};
+        return world();
     }
 
-    @:transition public function world()
+    @:transition(return status) public function world()
     {
         return @patch {status:"hello"};
     }
