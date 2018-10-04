@@ -1,0 +1,4 @@
+# @install: lix --silent download "https://github.com/grosmar/tink_cache/archive/d7dfacc67ee020cfd74210c07e0f6e9f92aff821.tar.gz" into tink_cache/0.0.0/github/d7dfacc67ee020cfd74210c07e0f6e9f92aff821
+-D tink_cache=0.0.0
+# -cp ${HAXESHIM_LIBCACHE}/tink_cache/0.0.0/github/d7dfacc67ee020cfd74210c07e0f6e9f92aff821/src
+-cp ..\tink_cache\src

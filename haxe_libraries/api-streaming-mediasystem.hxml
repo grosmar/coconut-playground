@@ -1,0 +1,5 @@
+# @install: lix --silent download "https://github.com/dataracing/api-streaming-mediasystem/archive/1dbd8e043eaaf4864215bdd3bdc0132f6b1380ec.tar.gz" into coconut.mdc/0.1.0/github/1dbd8e043eaaf4864215bdd3bdc0132f6b1380ec
+-D api-streaming-mediasystem=0.1.0
+-cp ..\api-streaming-mediasystem\src
+
+-lib api-streaming-mediasystem

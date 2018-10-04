@@ -1,0 +1,5 @@
+# @install: lix --silent download "https://github.com/grosmar/coconut.mdc/archive/1dbd8e043eaaf4864215bdd3bdc0132f6b1380ec.tar.gz" into coconut.mdc/0.1.0/github/1dbd8e043eaaf4864215bdd3bdc0132f6b1380ec
+-D coconut.mdc=0.1.0
+-cp ..\coconut.mdc\src
+
+-lib coconut.ui
