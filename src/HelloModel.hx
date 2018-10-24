@@ -7,8 +7,7 @@ class HelloModel implements Model
 
     @:transition public function test()
     {
-        //return @patch {status:"hello"};
-        return world()//.next(_ -> @patch {})
+        return world()
         .recover(function(_)
         {
             return @patch {};

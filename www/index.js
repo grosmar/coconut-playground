@@ -2524,8 +2524,33 @@ tink_state__$Observable_Computation_$Impl_$.async = function(f) {
 	}};
 	return this2;
 };
+tink_state__$Observable_Computation_$Impl_$.asyncWithLast = function(f) {
+	var last = haxe_ds_Option.None;
+	var this1 = { f : function() {
+		return f(last);
+	}};
+	var o = tink_state__$Observable_Observable_$Impl_$.map(tink_state__$Observable_Observable_$Impl_$.auto(this1),tink_state__$Observable_Transform_$Impl_$.plain(tink_state__$Observable_Observable_$Impl_$.ofPromise));
+	var this2 = { f : function() {
+		var ret = tink_state__$Observable_Observable_$Impl_$.get_value(tink_state__$Observable_Observable_$Impl_$.get_value(o));
+		if(ret._hx_index == 1) {
+			var v = ret.result;
+			last = haxe_ds_Option.Some(v);
+		}
+		return ret;
+	}};
+	return this2;
+};
 tink_state__$Observable_Computation_$Impl_$.plain = function(f) {
 	var this1 = { f : f};
+	return this1;
+};
+tink_state__$Observable_Computation_$Impl_$.withLast = function(f) {
+	var last = haxe_ds_Option.None;
+	var this1 = { f : function() {
+		var ret = f(last);
+		last = haxe_ds_Option.Some(ret);
+		return ret;
+	}};
 	return this1;
 };
 var tink_state_ObservableObject = function() { };
