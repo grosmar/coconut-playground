@@ -1,6 +1,6 @@
+# @install: lix --silent download "haxelib:modular#0.10.15" into modular/0.10.15/haxelib
 -D modular=0.10.15
-# @install: lix --silent download "haxelib:/modular#0.10.15" into modular/0.10.15/haxelib
--cp ${HAXE_LIBCACHE}/modular/0.10.15/haxelib/src
+-cp ${HAXESHIM_LIBCACHE}/modular/0.10.15/haxelib/src
 --macro Split.modules()
 -D closure_slavemode
 -D closure_overwrite

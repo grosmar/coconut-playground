@@ -1,5 +1,6 @@
--D tink_hxx=0.17.0
-# @install: lix --silent download "gh://github.com/haxetink/tink_hxx#c83d64a100d40ff7ed91d2d6ff82fbc6f73bf18f" into tink_hxx/0.17.0/github/c83d64a100d40ff7ed91d2d6ff82fbc6f73bf18f
--lib tink_parse
+# @install: lix --silent download "https://github.com/haxetink/tink_hxx/archive/9d6f3e31706972cd388d4678cf4d18818eae9733.tar.gz" into tink_hxx/0.18.0/github/9d6f3e31706972cd388d4678cf4d18818eae9733
+-D tink_hxx=0.18.0
+-cp ${HAXESHIM_LIBCACHE}/tink_hxx/0.18.0/github/9d6f3e31706972cd388d4678cf4d18818eae9733/src
+
 -lib tink_anon
--cp ${HAXE_LIBCACHE}/tink_hxx/0.17.0/github/c83d64a100d40ff7ed91d2d6ff82fbc6f73bf18f/src
+-lib tink_parse

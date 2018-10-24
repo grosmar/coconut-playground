@@ -1,5 +1,5 @@
 {
     "liveServer.settings.root": "/www",
     "haxe.displayConfigurations": [["completion.hxml"]],
-    "haxe.executable": "haxe.exe"
+    "haxe.executable": "haxe.cmd"
 }

@@ -9,7 +9,7 @@ class HelloModel implements Model
     {
         //return @patch {status:"hello"};
         return world()//.next(_ -> @patch {})
-        .tryRecover(function(_)
+        .recover(function(_)
         {
             return @patch {};
         });
