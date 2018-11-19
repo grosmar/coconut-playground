@@ -7,7 +7,7 @@ class HelloSubView extends View
 
     function render()
     '
-        <div>SubHelo</div>
+        <div>SubHello</div>
     ';
 
     override function afterMounting(elem)

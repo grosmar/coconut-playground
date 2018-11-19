@@ -12,8 +12,8 @@ coconut_data_Model.__name__ = true;
 var HelloModel = function(init) {
 	var this1 = new tink_state__$State_SimpleState(init.status,null,null);
 	this.__coco_status = this1;
-	var this11 = new tink_state__$State_SimpleState(0,null,null);
-	this.__coco_transitionCount = this11;
+	var this2 = new tink_state__$State_SimpleState(0,null,null);
+	this.__coco_transitionCount = this2;
 	this.errorTrigger = tink_core__$Signal_Signal_$Impl_$.trigger();
 	this.transitionErrors = this.errorTrigger;
 	this.observables = { status : this.__coco_status, isInTransition : tink_state__$Observable_Observable_$Impl_$.map(this.__coco_transitionCount,tink_state__$Observable_Transform_$Impl_$.plain(function(count) {
@@ -52,9 +52,9 @@ HelloModel.prototype = {
 				while(_g < _g1.length) {
 					var k = _g1[_g];
 					++_g;
-					var this11 = new Array(1);
-					var this2 = this11;
-					var ret1 = this2;
+					var this2 = new Array(1);
+					var this3 = this2;
+					var ret1 = this3;
 					ret1[0] = delta1[k];
 					sparse[k] = ret1;
 				}
@@ -226,9 +226,9 @@ coconut_ui_View.prototype = $extend(coconut_vdom_Renderable.prototype,{
 	,__class__: coconut_ui_View
 });
 var HelloSubView = function(data) {
-	this.__tink_defaults142 = { };
+	this.__tink_defaults9 = { };
 	this.__slots = { };
-	this.__tink_init143(data);
+	this.__tink_init10(data);
 	coconut_ui_View.call(this,$bind(this,this.render));
 };
 HelloSubView.__name__ = true;
@@ -236,7 +236,7 @@ HelloSubView.__init = function(attributes,inst) {
 	if(inst == null) {
 		inst = new HelloSubView(attributes);
 	} else {
-		inst.__tink_init143(attributes);
+		inst.__tink_init10(attributes);
 	}
 	return inst;
 };
@@ -248,7 +248,7 @@ HelloSubView.prototype = $extend(coconut_ui_View.prototype,{
 		var attr = __ret;
 		var __r1 = [];
 		coconut_vdom__$Children_Children_$Impl_$.ofArray(__r1);
-		__r1.push({ t : ":text", k : "SubHelo", a : coconut_vdom_VDom.EMPTY});
+		__r1.push({ t : ":text", k : "SubHello", a : coconut_vdom_VDom.EMPTY});
 		var children = coconut_vdom__$Children_Children_$Impl_$.ofArray(__r1);
 		__r.push({ t : "div", k : attr == null ? null : attr.key, a : attr, c : children});
 		return __r[0];
@@ -262,14 +262,14 @@ HelloSubView.prototype = $extend(coconut_ui_View.prototype,{
 	,toString: function() {
 		return "HelloSubView" + "#" + this.viewId;
 	}
-	,__tink_init143: function(attributes) {
+	,__tink_init10: function(attributes) {
 	}
 	,__class__: HelloSubView
 });
 var HelloView = function(data) {
-	this.__tink_defaults138 = { };
+	this.__tink_defaults5 = { };
 	this.__slots = { model : new coconut_ui_tools_Slot(this,null)};
-	this.__tink_init139(data);
+	this.__tink_init6(data);
 	coconut_ui_View.call(this,$bind(this,this.render));
 };
 HelloView.__name__ = true;
@@ -277,7 +277,7 @@ HelloView.__init = function(attributes,inst) {
 	if(inst == null) {
 		inst = new HelloView(attributes);
 	} else {
-		inst.__tink_init139(attributes);
+		inst.__tink_init6(attributes);
 	}
 	return inst;
 };
@@ -313,7 +313,7 @@ HelloView.prototype = $extend(coconut_ui_View.prototype,{
 	,toString: function() {
 		return "HelloView" + "#" + this.viewId;
 	}
-	,__tink_init139: function(attributes) {
+	,__tink_init6: function(attributes) {
 		this.__slots.model.setData(attributes.model);
 	}
 	,get_model: function() {
