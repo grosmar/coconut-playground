@@ -10,12 +10,12 @@ class HelloSubView extends View
         <div>SubHello</div>
     ';
 
-    override function afterMounting(elem)
+    override function viewDidMount()
     {
         js.Browser.console.log("HelloSubView afterMounting");
 	}
 
-    override function afterPatching(elem)
+    override function viewDidUpdate()
     {
         js.Browser.console.log("HelloSubView AfterPatching");
 	}

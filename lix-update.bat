@@ -1,6 +1,6 @@
 call lix install gh:MVCoconut/coconut.data
-call lix install gh:MVCoconut/coconut.ui
-call lix install gh:MVCoconut/coconut.vdom#diy
+call lix install gh:MVCoconut/coconut.ui#gen4
+call lix install gh:MVCoconut/coconut.vdom#gen4
 
 call lix install haxelib:http-status
 call lix install haxelib:modular
@@ -9,8 +9,9 @@ call lix install gh:haxetink/tink_anon
 call lix install gh:haxetink/tink_chunk
 call lix install gh:haxetink/tink_core
 call lix install gh:haxetink/tink_csss
+call lix install gh:haxetink/tink_domspec
 call lix install gh:haxetink/tink_http
-call lix install gh:haxetink/tink_hxx
+call lix install gh:haxetink/tink_hxx#gen4
 call lix install gh:haxetink/tink_io
 call lix install gh:haxetink/tink_json
 call lix install gh:haxetink/tink_lang

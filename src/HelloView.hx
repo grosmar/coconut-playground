@@ -5,12 +5,13 @@ import coconut.ui.View;
 class HelloView extends View
 {
     @:attr var model:HelloModel;
+    @:ref var sub:js.html.Element;
 
     function render()
     {
         return 
         model.status == "hello" 
-        ? @hxx '<HelloSubView />'
+        ? @hxx '<HelloSubView ref=${sub} />'
         : @hxx '<button onclick=${model.test()}>setHello</button>';
 
         /*return @hxx
@@ -26,13 +27,13 @@ class HelloView extends View
 
     }
 
-    override function afterMounting(elem)
+    override function viewDidMount()
     {
-        js.Browser.console.log("HelloView afterMounting");
+        js.Browser.console.log("HelloView afterMounting", sub.current);
 	}
 
-    override function afterPatching(elem)
+    override function viewDidUpdate()
     {
-        js.Browser.console.log("HelloView afterPatching");
+        js.Browser.console.log("HelloView afterPatching", sub.current);
 	}
 }

@@ -14,7 +14,7 @@ class Main
         var model = new HelloModel({status:"world"});
 
 		var view = hxx('<HelloView model=${model}/>');
-		view.mount(js.Browser.document.getElementById("app"));
+		view.renderInto(js.Browser.document.getElementById("app"));
 	}
 
 }
